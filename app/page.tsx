@@ -1,5 +1,7 @@
 import { pool } from '@/lib/db'; 
 
+export const dynamic = 'force-dynamic'; // <-- Add this line
+
 type Product = {
   id: number;
   name: string;
