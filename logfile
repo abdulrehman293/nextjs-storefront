@@ -1,0 +1,33 @@
+2026-08-31 16:07:53.185 PKT [13316] LOG:  starting PostgreSQL 18.4 on x86_64-windows, compiled by msvc-19.44.35227, 64-bit
+2026-08-31 16:07:53.200 PKT [13316] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-08-31 16:07:53.200 PKT [13316] LOG:  listening on IPv6 address "::1", port 5432
+2026-08-31 16:07:53.355 PKT [11364] LOG:  database system was interrupted; last known up at 2026-08-31 15:26:32 PKT
+2026-08-31 16:07:53.537 PKT [11364] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-08-31 16:07:53.542 PKT [11364] LOG:  redo starts at 0/1872AF0
+2026-08-31 16:07:53.543 PKT [11364] LOG:  invalid record length at 0/1872C30: expected at least 24, got 0
+2026-08-31 16:07:53.543 PKT [11364] LOG:  redo done at 0/1872BF8 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-08-31 16:07:53.546 PKT [10016] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-08-31 16:07:53.553 PKT [10016] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.001 s, total=0.008 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB; lsn=0/1872C30, redo lsn=0/1872C30
+2026-08-31 16:07:53.560 PKT [13316] LOG:  database system is ready to accept connections
+2026-08-31 16:08:16.548 PKT [27808] LOG:  could not receive data from client: An existing connection was forcibly closed by the remote host.
+	
+2026-08-31 16:12:53.563 PKT [10016] LOG:  checkpoint starting: time
+2026-08-31 16:12:54.379 PKT [10016] LOG:  checkpoint complete: wrote 7 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.775 s, sync=0.016 s, total=0.817 s; sync files=5, longest=0.010 s, average=0.004 s; distance=35 kB, estimate=35 kB; lsn=0/187BAF8, redo lsn=0/187BAA0
+2026-08-31 16:15:44.465 PKT [13316] LOG:  background worker "logical replication launcher" (PID 29672) was terminated by exception 0xC000013A
+2026-08-31 16:15:44.465 PKT [13316] HINT:  See C include file "ntstatus.h" for a description of the hexadecimal value.
+2026-08-31 16:15:44.465 PKT [13316] LOG:  terminating any other active server processes
+^C2026-08-31 16:23:57.542 PKT [39948] LOG:  starting PostgreSQL 18.4 on x86_64-windows, compiled by msvc-19.44.35227, 64-bit
+2026-08-31 16:23:57.564 PKT [39948] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-08-31 16:23:57.564 PKT [39948] LOG:  listening on IPv6 address "::1", port 5432
+2026-08-31 16:23:57.819 PKT [26108] LOG:  database system was shut down at 2026-08-31 16:22:51 PKT
+2026-08-31 16:23:57.847 PKT [39948] LOG:  database system is ready to accept connections
+2026-08-31 16:28:57.802 PKT [14476] LOG:  checkpoint starting: time
+2026-08-31 16:28:57.937 PKT [14476] LOG:  checkpoint complete: wrote 1 buffers (0.0%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.113 s, sync=0.007 s, total=0.138 s; sync files=3, longest=0.005 s, average=0.003 s; distance=0 kB, estimate=0 kB; lsn=0/187C510, redo lsn=0/187C4B8
+2026-08-31 16:36:12.528 PKT [14476] LOG:  shutting down
+2026-08-31 16:36:12.529 PKT [33440] ERROR:  canceling statement due to user request
+2026-08-31 16:36:12.530 PKT [39948] LOG:  received fast shutdown request
+2026-08-31 16:36:12.541 PKT [14476] LOG:  checkpoint starting: shutdown immediate
+2026-08-31 16:36:12.542 PKT [39948] LOG:  aborting any active transactions
+2026-08-31 16:36:12.557 PKT [14476] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.029 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/187C5C0, redo lsn=0/187C5C0
+2026-08-31 16:36:12.593 PKT [39948] LOG:  background worker "logical replication launcher" (PID 33440) exited with exit code 1
+2026-08-31 16:36:12.784 PKT [39948] LOG:  database system is shut down
